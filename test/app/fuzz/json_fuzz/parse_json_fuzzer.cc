@@ -44,5 +44,6 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t *data, size_t size)
 	ssize_t rc = spdk_json_parse(buf, size, NULL, 0, NULL, 0);
 
 	free(buf);
+
 	return 0;
 }
